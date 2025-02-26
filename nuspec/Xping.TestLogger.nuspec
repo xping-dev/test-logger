@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>Xping.TestLogger</id>
+    <version>$version$</version>
+    <authors>Xping.io</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <readme>docs\README.md</readme>
+    <icon>images\icon.png</icon>
+    <repository type="git" url="https://github.com/xping-dev/test-logger" branch="main" />
+    <description>
+    This package is designed to log test events and upload test results to the xping.io server for archiving and storage purposes. This allows for comprehensive analysis, historical data maintenance, and comparison of test results over time.
+    </description>
+    <releaseNotes></releaseNotes>
+    <tags>
+    web-api-testing; web-application-testing; .net; automation; monitoring;
+    </tags>
+    <dependencies>
+      <group targetFramework="netstandard2.0">
+        <dependency id="Xping.TestLogger.Core" version="$version$" />
+        <dependency id="Microsoft.Extensions.Hosting" version="9.0.2" />
+        <dependency id="Microsoft.Extensions.Http" version="9.0.2" />
+        <dependency id="Microsoft.TestPlatform.ObjectModel" version="17.13.0" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\LICENSE" target="LICENSE" />
+    <file src="README.md" target="docs" />
+    <file src="..\docs\docs\media\icon.png" target="images\" />
+    <file src="..\src\Xping.TestLogger\bin\Release\netstandard2.0\Xping.TestLogger.dll" target="lib\netstandard2.0\Xping.TestLogger.dll" />
+    <file src="..\src\Xping.TestLogger\bin\Release\netstandard2.0\Xping.TestLogger.xml" target="lib\netstandard2.0\Xping.TestLogger.xml" />
+    <file src="..\src\Xping.TestLogger.Converters\bin\Release\netstandard2.0\Xping.TestLogger.Converters.dll" target="lib\netstandard2.0\Xping.TestLogger.Converters.dll" />
+    <file src="..\src\Xping.TestLogger.Converters\bin\Release\netstandard2.0\Xping.TestLogger.Converters.xml" target="lib\netstandard2.0\Xping.TestLogger.Converters.xml" />
+  </files>
+</package>

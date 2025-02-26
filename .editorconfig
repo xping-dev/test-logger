@@ -1,0 +1,5 @@
+# All files
+[*]
+guidelines = 120
+guidelines_style = 1px dotted red
+file_header_template = /*\n * © 2025 Xping.io. All Rights Reserved.\n *\n * License: [MIT]\n */
